@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="...">
+    <meta name="keywords"  content="...">
+    <title>User admin panel</title>
+    <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/logo/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap-5.3.1.min.css">
+    <link rel="stylesheet" href="assets/css/fonts-icon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main-style.css">
+</head>
+<body>
+    <div id="layout-wrapper">
+        <!-- Header s t a r t -->
+        <header class="header">
+            <div class="left-content d-flex align-items-center gap-10 ">
+                <div class="logo-box">
+                    <div class="sidebar-logo max-w-200">
+                        <a href="/">
+                            <img class="img-cover" src="assets/images/logo/logo.png" alt="img">
+                        </a>
+                    </div>
+                </div>
+                <button class="half-expand-toggle sidebar-toggle d-block d-xl-none">
+                    <i class="ri-align-justify"></i>
+                </button>
+            </div>
+            <ul class="header-right">
+                <li class="cart-list dropdown">
+                    <!-- User Profile -->
+                    <div class="user-info dropdown-toggle toggle-arro-hidden" data-bs-toggle="dropdown"
+                        aria-expanded="false" role="button">
+                        <div class="user-img">
+                            <img src="assets/images/gallery/user.png" class="img-cover" alt="img">
+                        </div>
+                        <div class="user-details">
+                            <span class="name text-capitalize">Muhammad shahin</span>
+                        </div>
+                        <div class="icon px-3">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+                    <!-- Profile List -->
+                    <div class="dropdown-menu dropdown-list-style dropdown-menu-end white-bg">
+                        <ul class="profileListing">
+                            <li class="list">
+                                <a class="list-items dropdown-item" href="profile.html">
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items dropdown-item" href="">
+                                    <span>settings</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items dropdown-item" href="login.html">
+                                    <span>logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <!-- / Header -->
+
+        <!-- Sidebar s t a r t-->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <div class="sidebar-menu scroll-hide">
+                    <ul class="sidebar-dropdown-menu parent-menu-list">
+                        <li class="sidebar-menu-item active-menu">
+                            <a href="index.html" class="menu-item">
+                                <i class="ri-dashboard-line"></i>
+                                <span class="on-half-expanded">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="payment_log.html" class="menu-item">
+                                <i class="ri-honour-line"></i>
+                                <span class="on-half-expanded">payment log </span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="custom_domain.html" class="menu-item">
+                                <i class="ri-earth-line"></i>
+                                <span class="on-half-expanded">custom domain</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="support_tickets.html" class="menu-item">
+                                <i class="ri-ticket-line"></i>
+                                <span class="on-half-expanded">support tickets</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bottom Menu -->
+                <div class="sidebar-bottom">
+                    <ul class="sidebar-dropdown-menu parent-menu-list">
+                        <li class="sidebar-menu-item">
+                            <a href="#" class="menu-item">
+                                <i class="ri-user-line"></i>
+                                <span class="on-half-expanded">profile</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#" class="menu-item">
+                                <i class="ri-questionnaire-line"></i>
+                                <span class="on-half-expanded">help</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#" class="menu-item">
+                                <i class="ri-logout-box-line"></i>
+                                <span class="on-half-expanded">logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / -->
+            </div>
+        </aside>
+        <!-- / Sidebar-->
+
+        <!-- Main Content s t a r t -->
+        <main class="main-content">
+
+            <!-- Body Contents S t a r t -->
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <!-- Dashboard Card S t a r t  -->
+                            <div class="profile-card mb-40">
+                                <!-- Title -->
+                                <div class="d-flex justify-content-between align-items-center  mb-20">
+                                    <div class="section-tittle">
+                                        <h2 class="title text-capitalize font-600">welcome sujon</h2>
+                                    </div>
+                                    <a href="#" class="btn-primary-fill btn-height2">
+                                        <span class="icon">
+                                            <i class="ri-add-line"></i>
+                                        </span>
+                                        <span> Create a store</span>
+                                    </a>
+                                </div>
+                                <div class="row g-18">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="card-style h-calc d-flex align-items-center gap-20">
+                                            <div class="icon">
+                                                <i class="ri-exchange-dollar-line"></i>
+                                            </div>
+                                            <div class="cat-caption">
+                                                <div class="single-counter">
+                                                    <p class="amount">07</p>
+                                                </div>
+                                                <p class="pera text-capitalize">stores opened</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="card-style h-calc d-flex align-items-center gap-20">
+                                            <div class="icon">
+                                                <i class="ri-exchange-dollar-line"></i>
+                                            </div>
+                                            <div class="cat-caption">
+                                                <div class="single-counter">
+                                                    <p class="amount">00</p>
+                                                </div>
+                                                <p class="pera text-capitalize">stores opened</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Dashboard Card E n d -->
+
+                            <!--Table -->
+                            <div class="stores-table">
+                                <!-- Title -->
+                                <div class="d-flex justify-content-between flex-wrap gap-10 align-items-center mb-20">
+                                    <div class="section-tittle">
+                                        <h2 class="title text-capitalize font-600">your stores</h2>
+                                    </div>
+                                </div>
+            
+                                <!-- Table -->
+                                <div class="table-responsives table-height-350 scroll-active">
+                                    <table class="table-color-col table-head-border">
+                                        <thead>
+                                            <tr>
+                                            <th class="w-30 min-w-40">ID</th>
+                                                <th>Site</th>
+                                                <th>browse</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="w-30 min-w-40">1</td>
+                                                <td><a href="#" class="text-blue">abc.wmelons.com</a></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-10 flex-wrap justify-content-start">
+                                                        <button class="btn-light-outline btn-sm" type="submit">
+                                                            <span class="d-flex align-items-center gap-6">
+                                                                <i class="ri-eye-line"></i>
+                                                                <span>visit site</span>
+                                                            </span>
+                                                        </button>
+                                                        <button class="btn-primary-fill btn-sm" type="submit" data-bs-dismiss="modal">
+                                                            <span class="d-flex align-items-center gap-6">
+                                                                <span>manage store</span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-30 min-w-40">2</td>
+                                                <td><a href="#" class="text-blue">xyz.wmelons.com</a></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-10 flex-wrap justify-content-start">
+                                                        <button class="btn-light-outline btn-sm" type="submit">
+                                                            <span class="d-flex align-items-center gap-6">
+                                                                <i class="ri-eye-line"></i>
+                                                                <span>visit site</span>
+                                                            </span>
+                                                        </button>
+                                                        <button class="btn-primary-fill btn-sm" type="submit" data-bs-dismiss="modal">
+                                                            <span class="d-flex align-items-center gap-6">
+                                                                <span>manage store</span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-30 min-w-40">3</td>
+                                                <td><a href="#" class="text-blue">abc.wmelons.com</a></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-10 flex-wrap justify-content-start">
+                                                        <button class="btn-light-outline btn-sm" type="submit">
+                                                            <span class="d-flex align-items-center gap-6">
+                                                                <i class="ri-eye-line"></i>
+                                                                <span>visit site</span>
+                                                            </span>
+                                                        </button>
+                                                        <button class="btn-primary-fill btn-sm" type="submit" data-bs-dismiss="modal">
+                                                            <span class="d-flex align-items-center gap-6">
+                                                                <span>manage store</span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-30 min-w-40">4</td>
+                                                <td><a href="#" class="text-blue">xyz.wmelons.com</a></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-10 flex-wrap justify-content-start">
+                                                        <button class="btn-light-outline btn-sm" type="submit">
+                                                            <span class="d-flex align-items-center gap-6">
+                                                                <i class="ri-eye-line"></i>
+                                                                <span>visit site</span>
+                                                            </span>
+                                                        </button>
+                                                        <button class="btn-primary-fill btn-sm" type="submit" data-bs-dismiss="modal">
+                                                            <span class="d-flex align-items-center gap-6">
+                                                                <span>manage store</span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- End Table -->
+                            </div>
+                            <!--/ Table -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / body contents -->
+        </main>
+        <!-- / Main Content -->
+
+    </div>
+    <!-- jquery-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap-5.3.1.min.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
