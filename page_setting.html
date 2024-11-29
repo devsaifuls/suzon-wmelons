@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <script>
+        const setTheme = (theme) => {
+            theme ??= localStorage.theme || "light";
+            document.documentElement.dataset.theme = theme;
+            localStorage.theme = theme;
+        };
+        setTheme();
+    </script>
+    <meta logo="assets/images/logo/logo.png">
+    <meta white-logo="assets/images/logo/dark-mode-logo.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="These template is suitable for charity , NGO , non-profit organization , donation , church or a fundraising website.">
+    <meta name="keywords"
+        content="charity, causes, donate, charity foundation, charity hub, charity theme, donations, non profit, fundraiser,social, ngo, non-profit, nonprofit, organization, volunteer">
+    <meta name="author" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Charity & Donation HTML Template">
+    <meta property="og:site_name" content="donate Website">
+    <meta property="og:site_name" content="Charitfix">
+    <meta property="og:url" content="www.Charitfix.com">
+    <meta property="og:image" content="www.Charitfix.com">
+    <meta property="og:description"
+        content="These template is suitable for charity , NGO ,donate,fundraiser, non-profit organization">
+    <meta name="twitter:title" content="Charity & Donation HTML Template">
+    <meta name="twitter:description"
+        content="These template is suitable for charity , NGO ,donate,fundraiser, non-profit organization">
+    <meta name="twitter:image" content="www.Charitfix.com">
+    <meta name="twitter:card" content="summary">
+    <title>Admin - HTML Starter</title>
+    <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/logo/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap-5.3.1.min.css">
+    <link rel="stylesheet" href="assets/css/fonts-icon.css">
+    <!-- Plugin -->
+    <link rel="stylesheet" type="text/css" href="assets/css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/chart/apexcharts.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/summernote/summernote.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main-style.css">
+</head>
+<!-- Loader -->
+<div class="loader">
+    <div class="max-w-150 mx-auto my-auto d-flex h-100">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 6 8 12 14 12 9 18">
+                <animate attributeName="stroke" values="currentColor;yellow;yellow;" dur="2s"
+                    repeatCount="indefinite" />
+                <animate attributeName="stroke-dasharray" values="0,24;24,24;24,24" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="stroke-dashoffset" values="0;0;-24" dur="2s" repeatCount="indefinite" />
+            </path>
+        </svg>
+    </div>
+</div>
+<!-- / loader -->
+
+<body>
+    <div id="layout-wrapper">
+
+        <!-- Header s t a r t -->
+        <header class="header">
+            <!-- Header Left -->
+            <div class="left-content d-flex flex-wrap gap-10">
+                <!-- Dashboard -->
+                <a href="index.html" class="btn-primary-fill btn-sm small-btna bg-primary text-white">
+                    <i class="ri-dashboard-line"></i>
+                </a>
+
+                <!-- Sidebar Toggle Button -->
+                <button class="half-expand-toggle sidebar-toggle">
+                    <i class="ri-arrow-left-right-fill"></i>
+                </button>
+
+                <!-- Website Fronted -->
+                <a href="https://charitfix.vercel.app/theme/index.html" target="_blank" class="small-btn">
+                    <i class="ri-external-link-line"></i>
+                </a>
+
+                <!-- Search -->
+                <div class="header-search d-none d-xxl-block">
+                    <div class="search-icon">
+                        <i class="ri-search-line"></i>
+                    </div>
+                    <input class="search-field" type="text" placeholder="Search...">
+                </div>
+
+                <!-- Time & Date -->
+                <div class="date-time mx-10 d-none d-sm-block">
+                    <h5 id="current-time" class="text-uppercase text-16 font-500 line-h-1"></h5>
+                    <span id="current-date" class="text-secondary text-14 line-h-1"></span>
+                </div>
+            </div>
+            <!-- / Left -->
+
+            <!-- Header Right -->
+            <ul class="header-right">
+
+                <!-- Reports -->
+                <li class="cart-list position-relative d-none d-md-block">
+                    <a href="#"
+                        class="cart-items btn-light-outline btn-sm body-bg text-14 d-flex gap-10 align-items-center">
+                        <div class="icon">
+                            <i class="ri-download-cloud-2-line"></i>
+                        </div>
+                        <span>Download daily Reports</span>
+                    </a>
+                </li>
+
+                <!-- create -->
+                <li class="cart-list position-relative d-none d-md-block">
+                    <a href="create_donation.html" class="cart-items btn-primary-fill btn-sm text-14">
+                        <div class="icon">
+                            <i class="ri-add-line"></i>
+                        </div>
+                        <span>create Campaign </span>
+                    </a>
+                </li>
+
+                <!-- Notification -->
+                <li class="cart-list notification dropdown">
+                    <a href="javascript:void(0)" class="cart-items dropdown-toggle toggle-arro-hidden"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-notification-2-line p-0"></i>
+                        <span class="count">12</span>
+                    </a>
+                    <div class="dropdown-list-style dropdown-menu dropdown-menu-end">
+                        <div class="notification-header d-flex justify-content-between align-items-center mb-10">
+                            <h6>Notifications</h6>
+                            <button class="clear-notification">clear</button>
+                        </div>
+                        <ul class="notification-listing scroll-active p-0">
+                            <li class="list">
+                                <a class="list-items custom-break-spaces dropdown-item" href="javascript:void(0)">
+                                    <i class="ri-notification-3-line"></i>
+                                    <p class="line-clamp-2">Payment success</p>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items custom-break-spaces dropdown-item" href="javascript:void(0)">
+                                    <i class="ri-notification-3-line"></i>
+                                    <p class="line-clamp-2">new campaign created</p>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items custom-break-spaces dropdown-item" href="javascript:void(0)">
+                                    <i class="ri-notification-3-line"></i>
+                                    <p class="line-clamp-2">7 days ago , submit campaign approve waiting</p>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items custom-break-spaces dropdown-item" href="javascript:void(0)">
+                                    <i class="ri-notification-3-line"></i>
+                                    <p class="line-clamp-2">Events started, 2024-05-31 </p>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items custom-break-spaces dropdown-item" href="javascript:void(0)">
+                                    <i class="ri-notification-3-line"></i>
+                                    <p class="line-clamp-2">user created ,volunteering created</p>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items custom-break-spaces dropdown-item" href="javascript:void(0)">
+                                    <i class="ri-notification-3-line"></i>
+                                    <p class="line-clamp-2">support request, 6 days ago</p>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items custom-break-spaces dropdown-item" href="javascript:void(0)">
+                                    <i class="ri-notification-3-line"></i>
+                                    <p class="line-clamp-2">new campaign created</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="notification.html" class="see-all-notification border-0">see all notification <i
+                                class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </li>
+
+                <!-- Login User -->
+                <li class="cart-list dropdown">
+                    <!-- User Profile -->
+                    <div class="user-info dropdown-toggle toggle-arro-hidden" data-bs-toggle="dropdown"
+                        aria-expanded="false" role="button">
+                        <div class="user-img">
+                            <img src="assets/images/profile.png" class="img-cover" alt="img">
+                        </div>
+                    </div>
+                    <!-- Profile List -->
+                    <div class="dropdown-menu dropdown-list-style dropdown-menu-end white-bg with-248">
+                        <ul class="profileListing">
+                            <li>
+                                <!-- User info -->
+                                <a href="profile.html" class="user-sub-info">
+                                    <div class="user-details">
+                                        <span class="name">Admin</span>
+                                        <p class="pera">admin@info.com</p>
+                                    </div>
+                                    <div class="user-img">
+                                        <img src="assets/images/profile.png" class="img-cover" alt="img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items dropdown-item" href="profile.html">
+                                    <span>Profile</span>
+                                    <i class="ri-user-line"></i>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items dropdown-item" href="profile-change-password.html">
+                                    <span>updated password</span>
+                                    <i class="ri-key-2-line"></i>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items dropdown-item" href="settings-general.html">
+                                    <span>settings</span>
+                                    <i class="ri-settings-2-line"></i>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list-items dropdown-item" href="register.html">
+                                    <span>logout</span>
+                                    <i class="ri-logout-box-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- / Header Right -->
+        </header>
+        <!-- / Header -->
+
+        <!-- Sidebar s t a r t-->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <div class="sidebar-menu scroll-hide">
+                    <ul class="sidebar-dropdown-menu parent-menu-list">
+
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="index.html" class="menu-item">
+                                <i class="ri-dashboard-line"></i>
+                                <span class="on-half-expanded">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="donation_all.html" class="menu-item">
+                                <i class="ri-hand-heart-line"></i>
+                                <span class="on-half-expanded">donations </span>
+                            </a>
+                        </li>
+
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="events_all.html" class="menu-item">
+                                <i class="ri-medal-2-line"></i>
+                                <span class="on-half-expanded">Events </span>
+                            </a>
+                        </li>
+
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="user_donar.html" class="menu-item">
+                                <i class="ri-group-line"></i>
+                                <span class="on-half-expanded">users</span>
+                            </a>
+                        </li>
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="account-lis.html" class="menu-item">
+                                <i class="ri-bank-line"></i>
+                                <span class="on-half-expanded">Accounts</span>
+                            </a>
+                        </li>
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="payment-gateways.html" class="menu-item">
+                                <i class="ri-paypal-line"></i>
+                                <span class="on-half-expanded">payment gateway</span>
+                            </a>
+                        </li>
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="withdraw-request.html" class="menu-item">
+                                <i class="ri-wallet-3-line"></i>
+                                <span class="on-half-expanded">withdraw</span>
+                            </a>
+                        </li>
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item active-menu">
+                            <a href="home_page_variant.html" class="menu-item">
+                                <i class="ri-file-add-line"></i>
+                                <span class="on-half-expanded">Page setting</span>
+                            </a>
+                        </li>
+
+
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item ">
+                            <a href="button.html" class="menu-item">
+                                <i class="ri-building-3-line"></i>
+                                <span class="on-half-expanded">UI</span>
+                            </a>
+                        </li>
+
+
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="support.html" class="menu-item">
+                                <i class="ri-question-line"></i>
+                                <span class="on-half-expanded">Support</span>
+                            </a>
+                        </li>
+
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="notification.html" class="menu-item">
+                                <i class="ri-notification-line"></i>
+                                <span class="on-half-expanded">notification</span>
+                            </a>
+                        </li>
+
+                        <!-- Single Menu -->
+                        <li class="sidebar-menu-item">
+                            <a href="settings-general.html" class="menu-item">
+                                <i class="ri-settings-2-line"></i>
+                                <span class="on-half-expanded">General settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Logo -->
+                <div class="sidebar-logo d-flex justify-content-between align-items-center gap-10">
+                    <a href="/" class="d-block">
+                        <img class="changeLogo" src="./assets/images/logo.png" alt="img">
+                    </a>
+                    <button class="single change-theme-mode ToggleThemeButton border-0 mt-6">
+                        <i class="ri-moon-line"></i>
+                    </button>
+                </div>
+            </div>
+        </aside>
+        <!-- / Sidebar-->
+
+
+        <!-- Main Content s t a r t -->
+        <main class="main-content">
+
+            <!-- Body Contents S t a r t -->
+            <div class="page-content">
+
+                <!-- Page Header -->
+                <div class="page-header d-flex align-items-center justify-content-between flex-wrap gap-15">
+                    <div class="d-flex align-items-center gap-8">
+                        <div class="icon text-title text-23">
+                             <i class="ri-terminal-line"></i>
+                        </div>
+                        <h6 class="card-title text-18">page setting</h6>
+                    </div>
+                    <!-- Sub Menu -->
+                    <div class="sub-menu-wrapper">
+                        <ul class="sub-menu-list">
+                            <li class="sub-menu-item">
+                                <a href="home_page_variant.html" class="single"> Variants</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="page_setting.html" class="single active"> setting</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="home_page.html" class="single">home page</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="home_page2.html" class="single">home page 02</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="home_page3.html" class="single">home page 03</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="about_page.html" class="single">about page</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="blogs_page.html" class="single">blog </a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="contact_page.html" class="single">contact us</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="donation_page.html" class="single">donation</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="volunter_page.html" class="single">volunteer</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="volunteer_details.html" class="single">volunteer details </a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="donation_details.html" class="single">donation details </a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="blog_details.html" class="single">blog details </a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="faq_page.html" class="single">FAQ </a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="event_details.html" class="single">event details</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="privacy_policy.html" class="single">privacy-policy </a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="terms_condition.html" class="single">terms-condition</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- / Sub Menu -->
+                </div>
+                <!-- / Page Header -->
+
+                <!-- Content -->
+                <div class="card body-height-100vhs overflow-autos scroll-hides">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-tittle mb-20 pb-10 border-bottom">
+                                <h2 class="title text-primary text-capitalize font-500">Page Name & Slug Settings</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-xxl-4 col-xl-5 col-lg-5">
+                                <div class="page-left-contents">
+                                    <div class="collapse-wrapper style-three">
+                                        <div class="accordion" id="accordionExample2">
+                                            <!-- Single 00 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading0">
+                                                    <button class="accordion-button collapsed  text-capitalize"
+                                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse0"
+                                                        aria-expanded="false" aria-controls="collapse0">
+                                                        About page
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse0" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading0" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 01 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading11">
+                                                    <button class="accordion-button collapsed  text-capitalize"
+                                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse11"
+                                                        aria-expanded="false" aria-controls="collapse11">
+                                                        Blog page
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse11" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading11" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 02 -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading12">
+                                                    <button class="accordion-button collapsed text-capitalize" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse12"
+                                                        aria-expanded="false" aria-controls="collapse12">
+                                                        donation page
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse12" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading12" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 03-->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading13">
+                                                    <button class="accordion-button collapsed text-capitalize" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse13"
+                                                        aria-expanded="false" aria-controls="collapse13">
+                                                        volunteer page
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse13" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading13" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 04-->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading14">
+                                                    <button class="accordion-button collapsed text-capitalize" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse14"
+                                                        aria-expanded="false" aria-controls="collapse14">
+                                                        volunteer details
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse14" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading14" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 05-->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading15">
+                                                    <button class="accordion-button collapsed text-capitalize" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse15"
+                                                        aria-expanded="false" aria-controls="collapse15">
+                                                        donation details
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse15" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading15" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 05-->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading16">
+                                                    <button class="accordion-button collapsed text-capitalize" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse16"
+                                                        aria-expanded="false" aria-controls="collapse16">
+                                                        Blog details
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse16" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading16" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 06-->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading17">
+                                                    <button class="accordion-button collapsed text-capitalize" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse17"
+                                                        aria-expanded="false" aria-controls="collapse17">
+                                                        event details
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse17" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading17" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 07-->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading19">
+                                                    <button class="accordion-button collapsed text-capitalize" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse19"
+                                                        aria-expanded="false" aria-controls="collapse19">
+                                                        FAQ page
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse19" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading19" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 08-->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading18">
+                                                    <button class="accordion-button collapsed text-capitalize" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse18"
+                                                        aria-expanded="false" aria-controls="collapse18">
+                                                        privacy policy
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse18" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading18" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single 08-->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading30">
+                                                    <button class="accordion-button collapsed text-capitalize" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse30"
+                                                        aria-expanded="false" aria-controls="collapse30">
+                                                        terms condition
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse30" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading30" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-18">
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Name</label>
+                                                                    <input class="form-control theme-border input"
+                                                                        type="text" name="name" value="About"
+                                                                        placeholder="name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cool-xl-12">
+                                                                <!-- Multi Select2 input -->
+                                                                <div class="contact-form theme-border-tag">
+                                                                    <label class="contact-label">Meta tag</label>
+                                                                    <select class="multiple-select" multiple="multiple">
+                                                                        <option value="0" selected="selected">charity
+                                                                        </option>
+                                                                        <option value="1" selected="selected">donation
+                                                                        </option>
+                                                                        <option value="2">ngo</option>
+                                                                        <option value="3">foundation</option>
+                                                                        <option value="5">donate</option>
+                                                                        <option value="6">charity hub</option>
+                                                                        <option value="7">causes</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- / -->
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <div class="contact-form">
+                                                                    <label class="contact-label">Meta
+                                                                        Description</label>
+                                                                    <textarea class="contact-textarea theme-border"
+                                                                        cols="20" rows="3" placeholder=""></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-8 col-xl-7 col-lg-7">
+                                <div class="row g-18">
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">About page slug <span
+                                                    class="text-12 text-primary text-normal"> ( Example: about )</span>
+                                            </label>
+                                            <input class="form-control input" type="text" name="about" value="about"
+                                                placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">Blog page slug <span
+                                                    class="text-12 text-primary text-normal"> ( Example: blog )</span>
+                                            </label>
+                                            <input class="form-control input" type="text" name="blog" value="blog"
+                                                placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">contact page slug <span
+                                                    class="text-12 text-primary text-normal"> ( Example: contact )</span>
+                                            </label>
+                                            <input class="form-control input" type="text" name="contact" value="contact"
+                                                placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">donation page slug <span
+                                                    class="text-12 text-primary text-normal"> ( Example: donation )</span>
+                                            </label>
+                                            <input class="form-control input" type="text" name="donation" value="donation"
+                                                placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">volunteer page slug <span
+                                                    class="text-12 text-primary text-normal"> ( Example: volunteer )</span>
+                                            </label>
+                                            <input class="form-control input" type="text" name="volunteer" value="volunteer"
+                                                placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">volunteer details slug<span
+                                                    class="text-12 text-primary text-normal"> ( Example: volunteer-details
+                                                    )</span> </label>
+                                            <input class="form-control input" type="text" name="volunteer-details"
+                                                value="volunteer-details" placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">donation details slug <span
+                                                    class="text-12 text-primary text-normal"> ( Example: donation-details
+                                                    )</span> </label>
+                                            <input class="form-control input" type="text" name="donation-details"
+                                                value="donation-details" placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">Blog details slug<span
+                                                    class="text-12 text-primary text-normal"> ( Example: Blog-details
+                                                    )</span> </label>
+                                            <input class="form-control input" type="text" name="Blog-details"
+                                                value="Blog-details" placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">event details slug<span
+                                                    class="text-12 text-primary text-normal"> ( Example: event-details
+                                                    )</span> </label>
+                                            <input class="form-control input" type="text" name="event-details"
+                                                value="event-details" placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">FAQ page slug <span
+                                                    class="text-12 text-primary text-normal"> ( Example: faq )</span>
+                                            </label>
+                                            <input class="form-control input" type="text" name="faq" value="faq"
+                                                placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">privacy-policy slug<span
+                                                    class="text-12 text-primary text-normal"> ( Example: privacy-policy
+                                                    )</span> </label>
+                                            <input class="form-control input" type="text" name="privacy-policy"
+                                                value="privacy-policy" placeholder="slug">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="contact-form">
+                                            <label class="contact-label">terms-condition slug<span
+                                                    class="text-12 text-primary text-normal"> ( Example: terms-condition
+                                                    )</span> </label>
+                                            <input class="form-control input" type="text" name="terms-condition"
+                                                value="terms-condition" placeholder="slug">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+    
+                                <!-- Submit button -->
+                                <div class="d-flex align-items-center gap-16 flex-wrap justify-content-end mt-18">
+                                    <button class="btn-primary-fill" type="submit">
+                                        <span class="d-flex align-items-center gap-6">
+                                            <i class="ri-check-line"></i>
+                                            <span>save as</span>
+                                        </span>
+                                    </button>
+                                    <button class="btn-cancel-outline" type="submit" z>
+                                        <span class="d-flex align-items-center gap-6">
+                                            <i class="ri-close-line"></i>
+                                            <span>Discard</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--/ Content -->
+
+            </div>
+            <!-- / body contents -->
+
+            <!-- Footer S t a r t -->
+            <div class="footer d-flex justify-content-between align-items-center">
+                <p>&copy; 2025 <a href="#" class="mx-6 text-primary"> Admin. </a> All rights reserved.</p>
+                <p>Version: 1.1</p>
+            </div>
+            <!-- / Footer  -->
+        </main>
+        <!-- / Main Content -->
+    </div>
+
+
+    <!-- jquery-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap-5.3.1.min.js"></script>
+    <!-- Plugin -->
+    <script src="assets/js/plugin.js"></script>
+
+    <!-- Sidebar -->
+    <script src="assets/js/sidebar/metisMenu.min.js"></script>
+    <script src="assets/js/sidebar/custom-sidebar.js"></script>
+
+    <!-- Main Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

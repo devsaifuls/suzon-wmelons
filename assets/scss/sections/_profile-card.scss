@@ -1,0 +1,163 @@
+// Color Make
+.profile-card-color-one {
+    .icon {
+        color: #0CAF60;
+        background-color: rgba(12, 175, 96, .09);
+        border-color:#0CAF60;
+    }
+}
+
+.profile-card-color-two {
+    .icon {
+        color: #eab308;
+        background-color: rgba(234, 179, 8, .09);
+        border-color:#eab308;
+    }
+}
+
+.profile-card-color-three {
+    .icon {
+        color: #EF746D;
+        background-color: rgba(239, 116, 109, .09);
+        border-color:#EF746D;
+    }
+}
+
+.profile-card-color-four {
+    .icon {
+        color: var(--primary-title);
+        background-color: #f3f5f7;
+    }
+}
+
+.profile-card-color-five {
+
+    .icon {
+        color: #003DD9;
+        background-color: rgba(255, 193, 7, 0.1);
+    }
+}
+
+.progress-up {
+    color: #0CAF60 !important;
+}
+
+.progress-down {
+    color: #FA5F1C !important;
+}
+
+// End-fo color make
+
+
+// // Child wise color call
+.profile-card {
+
+    .col-lg-6:nth-child(1) .card-style,
+    .col-xxl-4:nth-child(1) .card-style {
+        @extend .profile-card-color-one;
+    }
+
+    .col-lg-6:nth-child(2) .card-style,
+    .col-xxl-4:nth-child(2) .card-style {
+        @extend .profile-card-color-two;
+    }
+
+    .col-lg-6:nth-child(3) .card-style,
+    .col-xxl-4:nth-child(3) .card-style {
+        @extend .profile-card-color-three;
+    }
+
+    .col-lg-6:nth-child(4) .card-style,
+    .col-xxl-4:nth-child(4) .card-style {
+        @extend .profile-card-color-four;
+    }
+
+    .col-lg-6:nth-child(5) .card-style,
+    .col-xxl-4:nth-child(5) .card-style {
+        @extend .profile-card-color-five;
+    }
+}
+
+
+
+
+// Card Syle Two
+.card-style {
+    padding: 30px;
+    transition: .3s;
+    border-radius: 8px;
+    background: var(--white);
+    border: 1px solid var(--primary-border);
+    @media #{$xs} {
+        flex-wrap: wrap;
+    }
+
+    @media #{$xl} {
+        padding: 15px;
+    }
+
+    @media #{$xxl} {
+        padding: 15px;
+    }
+
+    @media #{$xl} {
+        padding: 10px;
+    }
+
+    @media #{$lg} {
+        padding: 15px;
+    }
+
+    .icon {
+        background: var(--white);
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        border-radius: 50%;
+        font-size: 30px;
+        border: 1px solid transparent;
+    }
+
+    .cat-caption {
+        .pera {
+            font-size: 16px;
+            margin-bottom: 0px;
+            color:var(--secondary-paragraph);
+            line-height: 1;
+        }
+
+        .single-counter .counter,
+        .single-counter .currency,
+        .single-counter .amount {
+            text-transform: capitalize;
+            display: block;
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 9px;
+            line-height: 1;
+            color: var(--primary-title);
+            @media #{$lg} {
+                font-size: 18px;
+            }
+
+            @media #{$xs} {
+                font-size: 18px;
+            }
+
+            @media #{$xxl} {
+                font-size: 14px;
+            }
+
+            @media #{$xl} {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.max-height-400 {
+    max-height: 400px;
+}
+

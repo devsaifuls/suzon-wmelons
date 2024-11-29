@@ -1,0 +1,44 @@
+/*-----------------------------------------------------------------------------------
+
+  @version         : 1.0
+  @Template Name   : @admin Starter
+  @Template author : @
+
+-----------------------------------------------------------------------------------*/
+
+// Global SCSS
+  @import "global/variables";
+  @import "global/global";
+  @import "global/button";
+  @import "global/animation";
+  
+
+// Demo Default
+  @import "global/select2";
+
+// layout
+  @import "layout/header";
+  @import "layout/sidebar";
+
+// Admin Main design SASS
+
+  @import "sections/dashboard-card";
+  @import "sections/profile-card.scss";
+  @import "sections/profile";
+
+// Component
+  @import "components/custom-modal";
+  @import "components/custom-accrodion";
+  @import "components/accordion";
+  @import "components/tab";
+
+  @import "components/table";
+  @import "components/form";
+  @import "components/product";
+  @import "components/tagify";
+  @import "components/card";
+  @import "components/colorPicker";
+
+// Page
+  @import "pages/login";
+  @import "pages/payment";
