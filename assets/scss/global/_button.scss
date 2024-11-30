@@ -235,9 +235,9 @@
 						background: #FF6767;
 					}
 					@if($btn-name == light){
-						border: 1px solid var(--dark);
+						border: 1px solid var(--primary);
 						color: #fff;
-						background: var(--dark);
+						background: var(--primary);
 					}
 					@if($btn-name == dark){
 						border: 1px solid var(--dark);
