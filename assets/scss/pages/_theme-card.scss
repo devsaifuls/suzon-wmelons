@@ -1,14 +1,14 @@
 
 .single-product{
     transition: .4s;
-    box-shadow: 0 3px 12px rgba(45,23,191,0.09);
-    border-radius: 5px;
-    padding-top: 10px;
+    // box-shadow: 0 3px 12px rgba(45,23,191,0.09);
+    border-radius: 8px;
+    border: 1px solid var(--primary-border);
+    padding: 10px 10px;
     .product-img {
         overflow: hidden;
         position: relative;
         border-radius: 5px;
-        margin: 10px;
         margin-top: 0;
         &:after{
             transition: .4s;
@@ -54,14 +54,12 @@
     }
     .product-text{
         background-color: var(--white);
-        padding: 4px 0px 19px 22px;
-    
         .title{
             font-size: 18px;
             line-height: 1.2;
             font-weight: 600;
             display: block;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             &:hover{
                 color: var(--primary);
             }
