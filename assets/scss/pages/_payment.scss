@@ -160,3 +160,23 @@
 	}
   }
   
+
+  .offer-badge {
+	padding: 0px 9px;
+	text-transform: capitalize;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 20px;
+	display: inline-block;
+	gap: 6px;
+	width: fit-content;
+	color: #54dc95;
+  	border: 1px solid #79e9ad;
+	font-weight: 500;
+}
+.apply-btn {
+	right: 0;
+	height: 35px;
+	border-radius: 0 4px 4px 0;
+}

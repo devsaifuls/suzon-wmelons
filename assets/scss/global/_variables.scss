@@ -14,7 +14,7 @@
     --secondary-paragraph: #626e7d;
     --primary-btn: var(--primary);
     --secondary-btn: var(--secondary);
-    --primary-border: #EEEEEE;
+    --primary-border: #cbd5e1;
     --primary-border: #dee3e7;
     --secondary-border: #f4f4f4;
     --remix-icon: 'remixicon';
@@ -321,8 +321,8 @@ $i: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 /*-- Margin Padding PX PY && MX MY --*/
 @for $i from 0 through 30 {
 
-    /*-- Margin Top & Bottom --*/
-    .py-#{1 * $i} {
+    /*-- padding Top & Bottom --*/
+    .my-#{1 * $i} {
         margin-top: 1px * $i !important;
         margin-bottom: 1px * $i !important;
     }

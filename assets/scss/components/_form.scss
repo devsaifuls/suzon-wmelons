@@ -97,6 +97,9 @@
 .form-control:focus {
     background-color: unset;
 }
+.form-control {
+  font-size: 14px;
+}
 
 .input::placeholder {
     color: var(--secondary-paragraph);

@@ -23,7 +23,7 @@
   --secondary-paragraph: #626e7d;
   --primary-btn: var(--primary);
   --secondary-btn: var(--secondary);
-  --primary-border: #EEEEEE;
+  --primary-border: #cbd5e1;
   --primary-border: #dee3e7;
   --secondary-border: #f4f4f4;
   --remix-icon: "remixicon";
@@ -15441,8 +15441,8 @@
 }
 
 /*-- Margin Padding PX PY && MX MY --*/
-/*-- Margin Top & Bottom --*/
-.py-0 {
+/*-- padding Top & Bottom --*/
+.my-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
 }
@@ -15463,8 +15463,8 @@
   padding-right: 0px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-1 {
+/*-- padding Top & Bottom --*/
+.my-1 {
   margin-top: 1px !important;
   margin-bottom: 1px !important;
 }
@@ -15485,8 +15485,8 @@
   padding-right: 1px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-2 {
+/*-- padding Top & Bottom --*/
+.my-2 {
   margin-top: 2px !important;
   margin-bottom: 2px !important;
 }
@@ -15507,8 +15507,8 @@
   padding-right: 2px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-3 {
+/*-- padding Top & Bottom --*/
+.my-3 {
   margin-top: 3px !important;
   margin-bottom: 3px !important;
 }
@@ -15529,8 +15529,8 @@
   padding-right: 3px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-4 {
+/*-- padding Top & Bottom --*/
+.my-4 {
   margin-top: 4px !important;
   margin-bottom: 4px !important;
 }
@@ -15551,8 +15551,8 @@
   padding-right: 4px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-5 {
+/*-- padding Top & Bottom --*/
+.my-5 {
   margin-top: 5px !important;
   margin-bottom: 5px !important;
 }
@@ -15573,8 +15573,8 @@
   padding-right: 5px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-6 {
+/*-- padding Top & Bottom --*/
+.my-6 {
   margin-top: 6px !important;
   margin-bottom: 6px !important;
 }
@@ -15595,8 +15595,8 @@
   padding-right: 6px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-7 {
+/*-- padding Top & Bottom --*/
+.my-7 {
   margin-top: 7px !important;
   margin-bottom: 7px !important;
 }
@@ -15617,8 +15617,8 @@
   padding-right: 7px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-8 {
+/*-- padding Top & Bottom --*/
+.my-8 {
   margin-top: 8px !important;
   margin-bottom: 8px !important;
 }
@@ -15639,8 +15639,8 @@
   padding-right: 8px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-9 {
+/*-- padding Top & Bottom --*/
+.my-9 {
   margin-top: 9px !important;
   margin-bottom: 9px !important;
 }
@@ -15661,8 +15661,8 @@
   padding-right: 9px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-10 {
+/*-- padding Top & Bottom --*/
+.my-10 {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
 }
@@ -15683,8 +15683,8 @@
   padding-right: 10px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-11 {
+/*-- padding Top & Bottom --*/
+.my-11 {
   margin-top: 11px !important;
   margin-bottom: 11px !important;
 }
@@ -15705,8 +15705,8 @@
   padding-right: 11px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-12 {
+/*-- padding Top & Bottom --*/
+.my-12 {
   margin-top: 12px !important;
   margin-bottom: 12px !important;
 }
@@ -15727,8 +15727,8 @@
   padding-right: 12px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-13 {
+/*-- padding Top & Bottom --*/
+.my-13 {
   margin-top: 13px !important;
   margin-bottom: 13px !important;
 }
@@ -15749,8 +15749,8 @@
   padding-right: 13px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-14 {
+/*-- padding Top & Bottom --*/
+.my-14 {
   margin-top: 14px !important;
   margin-bottom: 14px !important;
 }
@@ -15771,8 +15771,8 @@
   padding-right: 14px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-15 {
+/*-- padding Top & Bottom --*/
+.my-15 {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
 }
@@ -15793,8 +15793,8 @@
   padding-right: 15px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-16 {
+/*-- padding Top & Bottom --*/
+.my-16 {
   margin-top: 16px !important;
   margin-bottom: 16px !important;
 }
@@ -15815,8 +15815,8 @@
   padding-right: 16px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-17 {
+/*-- padding Top & Bottom --*/
+.my-17 {
   margin-top: 17px !important;
   margin-bottom: 17px !important;
 }
@@ -15837,8 +15837,8 @@
   padding-right: 17px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-18 {
+/*-- padding Top & Bottom --*/
+.my-18 {
   margin-top: 18px !important;
   margin-bottom: 18px !important;
 }
@@ -15859,8 +15859,8 @@
   padding-right: 18px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-19 {
+/*-- padding Top & Bottom --*/
+.my-19 {
   margin-top: 19px !important;
   margin-bottom: 19px !important;
 }
@@ -15881,8 +15881,8 @@
   padding-right: 19px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-20 {
+/*-- padding Top & Bottom --*/
+.my-20 {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
 }
@@ -15903,8 +15903,8 @@
   padding-right: 20px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-21 {
+/*-- padding Top & Bottom --*/
+.my-21 {
   margin-top: 21px !important;
   margin-bottom: 21px !important;
 }
@@ -15925,8 +15925,8 @@
   padding-right: 21px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-22 {
+/*-- padding Top & Bottom --*/
+.my-22 {
   margin-top: 22px !important;
   margin-bottom: 22px !important;
 }
@@ -15947,8 +15947,8 @@
   padding-right: 22px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-23 {
+/*-- padding Top & Bottom --*/
+.my-23 {
   margin-top: 23px !important;
   margin-bottom: 23px !important;
 }
@@ -15969,8 +15969,8 @@
   padding-right: 23px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-24 {
+/*-- padding Top & Bottom --*/
+.my-24 {
   margin-top: 24px !important;
   margin-bottom: 24px !important;
 }
@@ -15991,8 +15991,8 @@
   padding-right: 24px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-25 {
+/*-- padding Top & Bottom --*/
+.my-25 {
   margin-top: 25px !important;
   margin-bottom: 25px !important;
 }
@@ -16013,8 +16013,8 @@
   padding-right: 25px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-26 {
+/*-- padding Top & Bottom --*/
+.my-26 {
   margin-top: 26px !important;
   margin-bottom: 26px !important;
 }
@@ -16035,8 +16035,8 @@
   padding-right: 26px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-27 {
+/*-- padding Top & Bottom --*/
+.my-27 {
   margin-top: 27px !important;
   margin-bottom: 27px !important;
 }
@@ -16057,8 +16057,8 @@
   padding-right: 27px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-28 {
+/*-- padding Top & Bottom --*/
+.my-28 {
   margin-top: 28px !important;
   margin-bottom: 28px !important;
 }
@@ -16079,8 +16079,8 @@
   padding-right: 28px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-29 {
+/*-- padding Top & Bottom --*/
+.my-29 {
   margin-top: 29px !important;
   margin-bottom: 29px !important;
 }
@@ -16101,8 +16101,8 @@
   padding-right: 29px !important;
 }
 
-/*-- Margin Top & Bottom --*/
-.py-30 {
+/*-- padding Top & Bottom --*/
+.my-30 {
   margin-top: 30px !important;
   margin-bottom: 30px !important;
 }
@@ -17558,7 +17558,7 @@ input[type=number] {
 }
 
 .border-right {
-  border-top: 1px solid var(--primary-border) !important;
+  border-right: 1px solid var(--primary-border) !important;
 }
 
 .border-left {
@@ -22987,6 +22987,10 @@ table {
   background-color: unset;
 }
 
+.form-control {
+  font-size: 14px;
+}
+
 .input::-webkit-input-placeholder {
   color: var(--secondary-paragraph);
   text-transform: capitalize;
@@ -24780,6 +24784,29 @@ span.tagify__tag-text {
 }
 .progress-container-horizontal .line.completed {
   background-color: var(--primary); /* Completed step line */
+}
+
+.offer-badge {
+  padding: 0px 9px;
+  text-transform: capitalize;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+  display: inline-block;
+  gap: 6px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #54dc95;
+  border: 1px solid #79e9ad;
+  font-weight: 500;
+}
+
+.apply-btn {
+  right: 0;
+  height: 35px;
+  border-radius: 0 4px 4px 0;
 }
 
 .singlePrice {
