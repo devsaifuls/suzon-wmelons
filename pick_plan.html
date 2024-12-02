@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="...">
+    <meta name="keywords" content="...">
+    <title>User admin panel</title>
+    <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/logo/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap-5.3.1.min.css">
+    <link rel="stylesheet" href="assets/css/fonts-icon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main-style.css">
+</head>
+<body>
+    <div id="layout-wrapper">
+        <!-- Sidebar s t a r t-->
+        <aside class="sidebar top-0">
+            <div class="sidebar-menu">
+                <div class="sidebar-menu scroll-hide">
+                    <a href="index.html" class="logo px-20 max-w-200 d-block mb-50">
+                        <img src="assets/images/logo/logo.png" alt="" class="img-cover">
+                    </a>
+                    <div class="progress-container">
+                        <a href="create_store.html" class="step completed">
+                            <div class="step-number">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <p>Your details</p>
+                        </a>
+                        <div class="line completed"></div>
+                        <a href="create_store.html" class="step completed">
+                            <div class="step-number"><span>2</span></div>
+                            <p>About your store</p>
+                        </a>
+                        <div class="line"></div>
+                        <a href="pick_plan.html" class="step current">
+                            <div class="step-number"><span>3</span></div>
+                            <p>Pick a plan</p>
+                        </a>
+                        <div class="line"></div>
+                        <a href="pick_theme.html" class="step">
+                            <div class="step-number"><span>4</span></div>
+                            <p>Select a theme</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- / Sidebar-->
+
+        <!-- Main Content s t a r t -->
+        <main class="main-content">
+
+            <!-- Body Contents S t a r t -->
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xxl-9">
+
+                        <a href="index.html" class="btn-light-outline mb-25">
+                            <span class="d-flex align-items-center gap-6">
+                                <i class="ri-arrow-left-s-line"></i>
+                                <span>chose & back to home</span>
+                            </span>
+                        </a>
+                        <!-- Steps Mobile Device -->
+                        <div class="progress-container-horizontal mb-40 d-flex d-xl-none">
+                            <a href="create_store.html" class="step completed">
+                              <div class="step-number">
+                                <i class="ri-check-line"></i>
+                              </div>
+                            </a>
+                            <div class="line completed"></div>
+                            <a href="create_store.html" class="step completed ">
+                              <div class="step-number"><span>2</span></div>
+                            </a>
+                            <div class="line completed"></div>
+                            <a href="pick_plan.html" class="step current">
+                              <div class="step-number"><span>3</span></div>
+                            </a>
+                            <div class="line"></div>
+                            <a href="pick_theme.html" class="step">
+                              <div class="step-number"><span>4</span></div>
+                            </a>
+                        </div>
+                        <!-- Steps Mobile Device -->
+
+                        <div class="card shadow-primary min-h-70vh overflow-scroll d-flex flex-column justify-content-between">
+                            <div class="content">
+                                <div class="mb-35 text-left">
+                                    <h4 class="text-24 font-500 mb-10">Pick a plan</h4>
+                                    <p class="text-secondary-paragraph">Pick a plan that best suit your needs</p>
+                                </div>
+    
+                                <!-- Plans -->
+                                 <div class="select-plan">
+                                     <div class="row">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="singlePrice mb-24">
+                                                <h4 class="priceTittle text-capitalize">Basic</h4>
+                                                <p class="pricePera">You can easily create your website by Pica. We will  provide all  type of  digital service for you. </p>
+                                                <div class="price-wrapper d-flex align-items-center gap-15 mb-22">
+                                                    <del class="off-price">$100</span></del>
+                                                    <span class="price">Free <span class="subTittle text-capitalize"> /Yearly</span></span>
+                                                </div>
+                                                <a href="pick_theme.html" class="btn-light-outline w-100 d-flex justify-content-center mb-40 text-18">
+                                                    <span class="d-flex align-items-center gap-6">
+                                                        <span>Try free</span>
+                                                    </span>
+                                                </a>
+                                                <ul class="listing">
+                                                    <li class="listItem">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 1</blockquote>
+                                                    </li>
+                                                    <li class="listItem">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 2</blockquote> 
+                                                    </li>
+                                                    <li class="listItem">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 3</blockquote>
+                                                    </li>
+                                                    <li class="listItem not-permission">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 4</blockquote>
+                                                    </li>
+                                                    <li class="listItem not-permission">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 5</blockquote>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="singlePrice mb-24">
+                                                <h4 class="priceTittle text-capitalize">standard</h4>
+                                                <p class="pricePera">You can easily create your website by Pica. We will  provide all  type of  digital service for you. </p>
+                                                <div class="price-wrapper d-flex align-items-center gap-15 mb-22">
+                                                    <del class="off-price">$42</span></del>
+                                                    <span class="price">$200 <span class="subTittle text-capitalize"> /Month</span></span>
+                                                </div>
+                                                <a href="pick_theme.html" class="btn-light-outline w-100 d-flex justify-content-center mb-40 text-18">
+                                                    <span class="d-flex align-items-center gap-6">
+                                                        <span>get started</span>
+                                                    </span>
+                                                </a>
+                                                <ul class="listing">
+                                                    <li class="listItem">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 1</blockquote>
+                                                    </li>
+                                                    <li class="listItem">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 2</blockquote> 
+                                                    </li>
+                                                    <li class="listItem">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 3</blockquote>
+                                                    </li>
+                                                    <li class="listItem not-permission">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 4</blockquote>
+                                                    </li>
+                                                    <li class="listItem not-permission">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 5</blockquote>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="singlePrice mb-24">
+                                                <h4 class="priceTittle text-capitalize">premium</h4>
+                                                <p class="pricePera">You can easily create your website by Pica. We will  provide all  type of  digital service for you. </p>
+                                                <div class="price-wrapper d-flex align-items-center gap-15 mb-22">
+                                                    <del class="off-price">$60</span></del>
+                                                    <span class="price">$35 <span class="subTittle text-capitalize"> /Month</span></span>
+                                                </div>
+                                                <a href="pick_theme.html" class="btn-light-outline w-100 d-flex justify-content-center mb-40 text-18">
+                                                    <span class="d-flex align-items-center gap-6">
+                                                        <span>get started</span>
+                                                    </span>
+                                                </a>
+                                                <ul class="listing">
+                                                    <li class="listItem">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 1</blockquote>
+                                                    </li>
+                                                    <li class="listItem">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 2</blockquote> 
+                                                    </li>
+                                                    <li class="listItem">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 3</blockquote>
+                                                    </li>
+                                                    <li class="listItem not-permission">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 4</blockquote>
+                                                    </li>
+                                                    <li class="listItem not-permission">
+                                                        <i class="ri-check-line"></i>
+                                                        <blockquote class="priceTag">feature 5</blockquote>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </div>
+                                 <!-- / Plans -->
+                            </div>
+
+                            <div class="d-flex justify-content-between aligin-items-center">
+                                <a href="#" class="btn-light-outline" type="submit">
+                                    <span class="d-flex align-items-center justify-content-center gap-6">
+                                        <i class="ri-arrow-left-s-line"></i>
+                                        <span>back & prev</span>
+                                    </span>
+                                </a>
+                                <a href="pick_theme.html" class="btn-primary-fill" type="submit">
+                                    <span class="d-flex align-items-center justify-content-center gap-6">
+                                        <span>save & next step</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / body contents -->
+
+        </main>
+        <!-- / Main Content -->
+
+    </div>
+    <!-- jquery-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap-5.3.1.min.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

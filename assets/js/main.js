@@ -174,6 +174,14 @@
         $(document).off('focusin.modal');
     })
 
+  /*------------------------------
+      payment gateway selection
+  -------------------------------*/
+  $(".payment-gateway-list li").on('click', function () {
+    $(".payment-gateway-list li").removeClass("selected");
+    $(this).addClass("selected");
+})
+
 
 })(jQuery);
 
