@@ -16681,7 +16681,6 @@
 body {
   scrollbar-width: none;
   -ms-overflow-style: none;
-  background: var(--body-bg);
 }
 
 body::-webkit-scrollbar {
@@ -17953,9 +17952,27 @@ button:focus:not(:focus-visible) {
   min-height: 60vh;
 }
 
+.min-h-90vh {
+  min-height: 90vh;
+}
+
+.min-h-80vh {
+  min-height: 80vh;
+}
+
 .shadow-primary {
-  -webkit-box-shadow: 17, 17, 26, 0.05 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-          box-shadow: 17, 17, 26, 0.05 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media (max-width: 1199px) {
+  .mr-lg-0 {
+    margin-right: 0 !important;
+  }
+}
+
+.border-primary-color {
+  border-bottom: 1px solid var(--primary) !important;
 }
 
 .btn-primary-fill {
@@ -24333,6 +24350,7 @@ span.tagify__tag-text {
   padding: 30px;
   background: var(--white);
   border-radius: 10px;
+  margin-bottom: 100px;
 }
 @media (max-width: 575px) {
   .login-area .login-card {
